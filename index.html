@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Lista de tarefas</title>
+
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-list-check" style="color: #9b6938;"></i>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <main>
+        <form>
+            <label for="new-task">Nova tarefa:</label>
+            <input type="text" id="new-task" required/>
+
+            <labe for="task-begin-date">Data de início:</labe>
+            <input type="date" id="task-begin-date" required/>
+
+            <labe for="task-end-date">Data de término:</labe>
+            <input type="date" id="task-end-date" required/>
+
+            <label for="task-description">Descrição</label>
+            <textarea type="" id="task-description" name="task-description"></textarea>
+
+            <button type="submit">Adicionar tarefa</button>
+        </form>
+
+        <ul>
+            <li>
+                <h3>Tarefa 1</h3>
+                <div class="task-dates">
+                    <p>Data de início</p>
+                    <p>Data de término</p>
+                </div>
+                <p class="task-descripton">descrição</p>
+            </li>
+            <li>
+                <h3>Tarefa 2</h3>
+                <div class="task-dates">
+                    <p>Data de início</p>
+                    <p>Data de término</p>
+                </div>
+                <p class="task-descripton">descrição</p>
+            </li>
+            <li>
+                <h3>Tarefa 3</h3>
+                <div class="task-dates">
+                    <p>Data de início</p>
+                    <p>Data de término</p>
+                </div>
+                <p class="task-descripton">descrição</p>
+            </li>
+        </ul>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</body>
+</html>
