@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -13,49 +20,58 @@
         <h1>Lista de tarefas</h1>
     </header>
     <main>
-        <form>
-            <label for="new-task">Nova tarefa:</label>
-            <input type="text" id="new-task" required/>
-
-            <labe for="task-begin-date">Data de início:</labe>
-            <input type="date" id="task-begin-date" required/>
-
-            <labe for="task-end-date">Data de término:</labe>
-            <input type="date" id="task-end-date" required/>
-
-            <label for="task-description">Descrição</label>
-            <textarea type="" id="task-description" name="task-description"></textarea>
-
-            <button type="submit">Adicionar tarefa</button>
+        <form id="input-form">
+            <div>
+                <label for="new-task">Nova tarefa:</label>
+                <input type="text" id="new-task" required/>
+            </div>
+           
+            <div>
+                <label for="task-begin-date">Data de início:</label>
+                <input type="date" id="task-begin-date" required/>
+            </div>
+           
+            <div>   
+                <label for="task-end-date">Data de término:</label>
+                <input type="date" id="task-end-date" required/>
+            </div>
+            
+            <label for="task-description">Descrição:</label>
+            <textarea type="" id="task-description" name="task-description" maxlength="200"></textarea>
+           
+            <div class="btn-container">
+                <button type="submit">Adicionar tarefa</button>
+            </div>
         </form>
 
         <ul>
             <li>
-                <h3>Tarefa 1</h3>
+                <h3 class="task-name">Tarefa 1</h3>
                 <div class="task-dates">
-                    <p>Data de início</p>
-                    <p>Data de término</p>
+                    <p>Data de início: 21/01/2024</p>
+                    <p>Data de término: 22/01/2024</p>
                 </div>
-                <p class="task-descripton">descrição</p>
+                <p class="task-descripton">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, rem ipsum beatae labore natus accusamus minus ut neque quod! Aliquam nesciunt reprehenderit obcaecati quae cumque unde sequi maxime animi corporis.</p>
             </li>
             <li>
-                <h3>Tarefa 2</h3>
+                <h3 class="task-name">Tarefa 2</h3>
                 <div class="task-dates">
-                    <p>Data de início</p>
-                    <p>Data de término</p>
+                    <p>Data de início: 21/01/2024</p>
+                    <p>Data de término: 22/01/2024</p>
                 </div>
-                <p class="task-descripton">descrição</p>
+                <p class="task-descripton">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, rem ipsum beatae labore natus accusamus minus ut neque quod! Aliquam nesciunt reprehenderit obcaecati quae cumque unde sequi maxime animi corporis.</p>
             </li>
-            <li>
-                <h3>Tarefa 3</h3>
+            <li class="last-task">
+                <h3 class="task-name">Tarefa 3</h3>
                 <div class="task-dates">
-                    <p>Data de início</p>
-                    <p>Data de término</p>
+                    <p>Data de início: 21/01/2024</p>
+                    <p>Data de término: 22/01/2024</p>
                 </div>
-                <p class="task-descripton">descrição</p>
+                <p class="task-descripton">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut fugiat fuga perspiciatis esse accusantium nihil eum hic? Porro adipisci quod quae eos esse aliquam cupiditate reiciendis, numquam illo aperiam qui.</p>
             </li>
         </ul>
     </main>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </html>
