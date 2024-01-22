@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0ebeb8a;
+}
+header{
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    line-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(248, 223, 187, 0.671);
+    height: 10vh;
+}
+header i{
+    scale: 1.2;
+}
+main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+   font-family: 'Raleway', sans-serif;
+}
+#input-form{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    font-size: 15px;
+}
+#input-form label,
+input,
+textarea{
+    color: rgb(155,105,56);
+}
+#input-form label{
+    font-weight: 500;
+}
+#input-form input{
+    width: 180px;
+    margin: 6px 3px;
+    height: 22px;
+    border-radius: 3px;
+    border: .5px solid rgb(155,105,56);
+}
+#input-form textarea{
+    resize: none;
+    width: 350px;
+    height: 100px;
+    margin: 9px 0px 9px 2px;
+    border-radius: 3px;
+    border: .5px solid rgb(155,105,56);
+}
+#input-form button{
+    font-size: 16px;
+    font-weight: 600;
+    width: 170px;
+    height: 30px;
+    background-color: rgba(247, 220, 181, 0.527);
+    border: .5px solid rgb(155,105,56);
+    color: #181717c2;
+    border-radius: 3px;
+}
+#input-form button:hover{
+    cursor: pointer;
+}
+#input-form button:active{
+    text-decoration: underline;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 400px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(112, 73, 34);
+}
+ul li{
+    margin-bottom: 28px;
+
+}
+.task-name{
+    font-size: 18px;
+}
+.task-dates{
+    font-size: 13px;
+    margin: 5px 0;
+}
+.task-descripton{
+    font-size: 13px;
+}
