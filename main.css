@@ -81,18 +81,42 @@ ul{
     list-style: none;
     font-family: 'Poppins', sans-serif;
     color: rgb(112, 73, 34);
+
 }
 ul li{
     margin-bottom: 28px;
-
+    width: 100%;
+}
+.task-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.material-symbols-outlined:hover,
+.task-name:hover{
+    cursor: pointer;
+}
+.material-symbols-outlined:focus,
+.material-symbols-outlined:active{
+    border: .8px solid rgb(112, 73, 34);
 }
 .task-name{
     font-size: 18px;
 }
-.task-dates{
+.completed{
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgba(143, 56, 56, 0.747);
+}
+.task-info{
     font-size: 13px;
     margin: 5px 0;
+    display: none;
 }
 .task-descripton{
-    font-size: 13px;
+    font-size: 14px;
+    margin: 5px 0;
 }
