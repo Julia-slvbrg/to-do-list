@@ -38,6 +38,11 @@ input,
 textarea{
     color: rgb(155,105,56);
 }
+textarea::placeholder{
+    color: rgb(155,105,56);
+    font-style: italic;
+    font-size: 12px;
+}
 #input-form label{
     font-weight: 500;
 }

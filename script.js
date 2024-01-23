@@ -59,6 +59,11 @@ $(document).ready(function(){
         taskHeader.appendTo(newListItem);
         taskInfo.appendTo(newListItem);
         newListItem.appendTo('ul');
+
+        $('#new-task').val('');
+        $('#task-begin-date').val('');
+        $('#task-end-date').val('');
+        $('#task-description').val('');
     });
 
     $('ul').on('click', '.expand-more-icon', function(){
