@@ -26,7 +26,7 @@ This application demonstrates the use of jQuery to dynamically display informati
 ![Date error](./images/date-error.png)
 
 ## Demonstration
-[Link (deploy)]()
+[Link (deploy)](https://to-do-list-theta-five.vercel.app/)
 
 
 
